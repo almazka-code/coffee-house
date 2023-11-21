@@ -6,11 +6,11 @@
   font-family: "Inter", Verdana, sans-serif;
 }
 
-%outline {
-  outline: 0;
-  outline: 1px solid $color-dark;
-  outline-offset: 3px;
-}
+// %outline {
+//   outline: 0;
+//   outline: 1px solid $color-dark;
+//   outline-offset: 3px;
+// }
 
 %flex {
   display: flex;
@@ -18,16 +18,16 @@
   align-items: center;
 }
 
-%interactive {
-  &:focus-visible {
-    @extend %outline;
-  }
+// %interactive {
+//   &:focus-visible {
+//     @extend %outline;
+//   }
 
-  &:hover:not(:focus-visible) {
-    color: $color-border-dark;
-  }
+//   &:hover:not(:focus-visible) {
+//     color: $color-border-dark;
+//   }
 
-  &:active:not(:focus-visible) {
-    color: $color-border-dark;
-  }
-}
+//   &:active:not(:focus-visible) {
+//     color: $color-border-dark;
+//   }
+// }
