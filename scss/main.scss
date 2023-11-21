@@ -11,7 +11,9 @@
 
 //Layouts
 @import "layouts/container";
+@import "layouts/header";
 @import "layouts/navigation";
 @import "layouts/section";
 
-
+//Components
+@import "components/hero";
