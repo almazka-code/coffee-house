@@ -23,4 +23,20 @@
     height: 20px;
     @include background-image (url("../assets/svg/coffee-cup.svg"));
   }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $color-dark;
+    transform: scaleX(0);
+    @extend %transition;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
 }
