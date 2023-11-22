@@ -14,9 +14,14 @@
 @import "layouts/header";
 @import "layouts/navigation";
 @import "layouts/section";
+@import "layouts/footer";
 
 //Components
 @import "components/hero";
 @import "components/favorites";
 @import "components/carousel";
 @import "components/about";
+@import "components/mobile";
+@import "components/app-link";
+@import "components/social";
+@import "components/address";

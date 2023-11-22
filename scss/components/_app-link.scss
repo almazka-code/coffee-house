@@ -1,0 +1,58 @@
+.app-link {
+  display: flex;
+  gap: 20px;
+}
+
+.app-link__button {
+  display: flex;
+  gap: 8px;
+  min-width: 200px;
+  padding: 12px 20px;
+  @include border($color: $color-border-dark, $radius: 100px);
+  @extend %transition;
+
+  &:hover {
+    background-color: $color-border-dark;
+  }
+
+  &:hover .app-link__text {
+    color: $color-light;
+  }
+
+  &:hover .app-link__img {
+    filter: invert(92%) sepia(18%) saturate(227%) hue-rotate(333deg) brightness(93%) contrast(90%);
+  }
+}
+
+.app-link__img {
+  width: 36px;
+  height: 36px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  @extend %transition;
+
+  &--appstore {
+    background-image: url("../assets/svg/app-store.svg");;
+  }
+
+  &--googleplay {
+    background-image: url("../assets/svg/google-play.svg");;
+  }
+}
+
+.app-link__text {
+  display: flex;
+  flex-direction: column;
+  @extend %transition;
+}
+
+.app-link__available {
+  font-size: 10px;
+  font-weight: 600;
+  line-height: 140%;
+}
+
+.app-link__store {
+  font-weight: 600;
+}

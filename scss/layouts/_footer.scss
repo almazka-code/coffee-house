@@ -1,0 +1,30 @@
+.footer__wrap {
+  @include flex(100px);
+  padding: 100px;
+  background: $color-border-dark;
+  border-radius: 40px;
+}
+
+.footer__left {
+  flex-basis: 50%;
+}
+
+.footer__title {
+  margin-bottom: 40px;
+  letter-spacing: 0.5px;
+  color: $color-light;
+}
+
+.footer__right {
+  flex-basis: 50%;
+  color: $color-light;
+}
+
+.footer__subtitle {
+  margin-bottom: 37px;
+  letter-spacing: 0.3px;
+}
+
+
+
+

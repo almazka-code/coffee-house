@@ -19,6 +19,7 @@
 .carousel__title {
   margin-bottom: 16px;
   text-align: center;
+  letter-spacing: 0.45px;
 }
 
 .carousel__descr {
@@ -52,6 +53,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  @extend %transition;
 }
 
 .carousel__arrow--right {
@@ -81,8 +83,8 @@
   height: 4px;
   border-radius: 100px;
   background-color: $color-border-light;
-}
 
-.carousel__pagination--active {
-  background-color: $color-border-dark;
+  &--active {
+    background-color: $color-border-dark;
+  }
 }

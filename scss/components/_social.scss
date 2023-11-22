@@ -1,0 +1,44 @@
+.social {
+  display: flex;
+  gap: 12px;
+}
+
+.social__link {
+  position: relative;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  @include border ($color: $color-border-light, $radius: 50%);
+  @extend %transition;
+}
+
+.social__img {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  @extend %transition;
+
+  &--twitter {
+    @include background-image (url("../assets/svg/twitter.svg"));
+  }
+
+  &--instagram {
+    @include background-image (url("../assets/svg/instagram.svg"));
+  }
+
+  &--facebook {
+    @include background-image (url("../assets/svg/facebook.svg"));
+  }
+}
+
+.social__link:hover .social__img {
+  filter: invert(93%) sepia(13%) saturate(239%) hue-rotate(341deg) brightness(92%) contrast(91%);
+}
+
+.social__link:hover {
+  background-color: $color-light;
+}
