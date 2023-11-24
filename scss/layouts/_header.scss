@@ -40,3 +40,31 @@
     transform: scaleX(1);
   }
 }
+
+.header__text {
+  position: relative;
+  font-weight: 600;
+  padding-bottom: 5px;
+  padding-right: 28px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    @include background-image (url("../assets/svg/coffee-cup.svg"));
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $color-dark;
+
+  }
+
+}

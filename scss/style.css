@@ -332,7 +332,7 @@ section, main, header, footer, article {
   font-style: italic;
   font-display: swap;
 }
-.address__hover::after, .social__img, .social__link, .app-link__text, .app-link__img, .app-link__button, .about__image, .carousel__arrow, .carousel__button, .hero__svg, .hero__menu, .nav__link::after, .header__menu::before, a,
+.card__image, .menu__btn::before, .menu__btn, .address__hover::after, .social__img, .social__link, .app-link__text, .app-link__img, .app-link__button, .about__image, .carousel__arrow, .carousel__button, .hero__svg, .hero__menu, .nav__link::after, .header__menu::before, a,
 button {
   transition: all 0.5s ease;
 }
@@ -494,6 +494,33 @@ ul {
   transform: scaleX(1);
 }
 
+.header__text {
+  position: relative;
+  font-weight: 600;
+  padding-bottom: 5px;
+  padding-right: 28px;
+}
+.header__text::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  background-image: url("../assets/svg/coffee-cup.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.header__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background-color: #403F3D;
+}
+
 .nav__list {
   gap: 33px;
 }
@@ -533,6 +560,9 @@ ul {
   background: #665F55;
   border-radius: 40px;
 }
+.footer__wrap--menu {
+  padding: 97px;
+}
 
 .footer__left {
   flex-basis: 50%;
@@ -550,7 +580,7 @@ ul {
 }
 
 .footer__subtitle {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
   letter-spacing: 0.3px;
 }
 
@@ -897,7 +927,7 @@ ul {
 }
 
 .address__item:not(:last-child) {
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .address__text {
@@ -941,6 +971,137 @@ ul {
 }
 .address__hover:hover::after {
   transform: scaleX(1);
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.menu__title {
+  max-width: 800px;
+  margin-bottom: 40px;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+.menu__toggle {
+  margin-bottom: 40px;
+}
+
+.menu__list {
+  display: flex;
+  gap: 16px;
+}
+
+.menu__btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1px solid #C1B6AD;
+  border-radius: 100px;
+  min-width: 90px;
+  padding: 8px;
+  padding-right: 16px;
+  font-weight: 600;
+}
+.menu__btn::before {
+  content: "";
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  background-color: #C1B6AD;
+  border-radius: 50%;
+}
+.menu__btn::after {
+  position: absolute;
+  left: 15px;
+  content: "";
+  width: 16px;
+  height: 24px;
+  display: inline-block;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.menu__btn--coffee::after {
+  background-image: url("../assets/svg/toggle/coffee.svg");
+}
+.menu__btn--tea::after {
+  background-image: url("../assets/svg/toggle/tea.svg");
+}
+.menu__btn--dessert::after {
+  background-image: url("../assets/svg/toggle/dessert.svg");
+}
+.menu__btn--active {
+  background-color: #665F55;
+  color: #E1D4C9;
+}
+.menu__btn--active::before {
+  background-color: #E1D4C9;
+}
+.menu__btn:hover {
+  background-color: #665F55;
+  color: #E1D4C9;
+}
+.menu__btn:hover::before {
+  background-color: #E1D4C9;
+}
+
+.menu__group {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 40px;
+}
+
+.card__article {
+  border: 1px solid #C1B6AD;
+  border-radius: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card__top {
+  min-height: 310px;
+  overflow: hidden;
+  border-radius: 40px;
+}
+
+.card__image {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 40px;
+  transform: scale(1.1);
+}
+.card__image:hover {
+  transform: scale(1);
+}
+
+.card__bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  height: 100%;
+}
+
+.card__title {
+  margin-bottom: 11px;
+  letter-spacing: 0.3px;
+}
+
+.card__text {
+  margin-bottom: 12px;
+}
+
+.card__price {
+  margin-top: auto;
+  letter-spacing: 0.5px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -3,6 +3,10 @@
   padding: 100px;
   background: $color-border-dark;
   border-radius: 40px;
+
+  &--menu {
+    padding: 97px;
+  }
 }
 
 .footer__left {
@@ -21,7 +25,7 @@
 }
 
 .footer__subtitle {
-  margin-bottom: 37px;
+  margin-bottom: 35px;
   letter-spacing: 0.3px;
 }
 
