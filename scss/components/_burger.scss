@@ -1,0 +1,45 @@
+.burger {
+  display: none;
+  position: relative;
+  width: 44px;
+  height: 44px;
+  padding: 5px;
+  @include border ($color: $color-border-dark, $radius: 50%);
+  z-index: 20;
+
+
+  @include media-tablet {
+    display: inline-block;
+  }
+}
+
+.burger__line {
+  position: absolute;
+  display: inline-block;
+  width: 16px;
+  height: 2px;
+  background-color: $color-dark;
+
+  &--first {
+    transform: translateY(4px) translateX(-50%);
+    left: 50%;
+  }
+
+  &--second {
+    transform: translateY(-4px) translateX(-50%);
+    left: 50%;
+  }
+}
+
+.burger--active
+.burger__line--first{
+  transform: rotateZ(45deg) translateY(5px) translateX(-5px);
+  @extend %transition;
+}
+
+.burger--active
+.burger__line--second {
+  transform: rotateZ(-45deg) translateY(-5px) translateX(-5px);
+  @extend %transition;
+}
+
