@@ -44,6 +44,10 @@
   margin: 5px;
   @include border ($color: $color-border-dark, $radius: 50%);
   @extend %transition;
+
+  @include media-tablet {
+    margin: 0;
+  }
 }
 
 .carousel__arrow {

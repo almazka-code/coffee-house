@@ -87,13 +87,19 @@
    }
 }
 
+.menu__content {
+  display: flex;
+  justify-content: center;
+}
+
 .menu__group {
-  // display: flex;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
-  // gap: 40px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
+  display: flex;
+  // justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  @include media-tablet {
+    justify-content: center;
+  }
 }
 

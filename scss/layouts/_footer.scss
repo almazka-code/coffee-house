@@ -7,10 +7,19 @@
   &--menu {
     padding: 97px;
   }
+
+  @include media-tablet {
+    display: block;
+    padding: 100px 60px;
+  }
 }
 
 .footer__left {
   flex-basis: 50%;
+
+  @include media-tablet {
+    margin-bottom: 98px;
+  }
 }
 
 .footer__title {
