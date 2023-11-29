@@ -5,9 +5,221 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Coffee House</title>
+  <link rel="shortcut icon" href="assets/svg/favicon.ico" type="image/x-icon">
+
+  <link rel="stylesheet" href="scss/style.css">
 </head>
 
-<body>
+<body class="body">
+
+  <!-- header start-->
+  <header class="header">
+    <div class="container header__container">
+
+      <a href="#">
+        <img class="header__logo" src="assets/svg/logo.svg" alt="Logo">
+      </a>
+      <nav class="nav header__nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#favorites">Favorite coffee</a></li>
+          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
+          <li class="nav__item"><a class="nav__link" href="#mobile">Mobile app</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contact">Contact us</a></li>
+        </ul>
+      </nav>
+      <a href="menu.html" class="header__menu">Menu</a>
+
+      <!-- <button class="burger">
+          <span class="burger__line burger__line_first"></span>
+          <span class="burger__line burger__line_second"></span>
+          <span class="burger__line burger__line_third"></span>
+        </button> -->
+
+    </div>
+  </header>
+
+  <!-- header end-->
+
+  <main>
+    <!-- section hero start-->
+    <div class="section container">
+      <div class="hero">
+        <h1 class="visually-hidden">Coffee House</h1>
+        <div class="hero__wrap">
+          <h2 class="hero__title main-title"><span class="text-accent">Enjoy</span> premium coffee at our charming cafe
+          </h2>
+          <p class="hero__descr">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is
+            a
+            popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
+            beverage.</p>
+          <a href="menu.html" class="hero__btn">
+            <span class="hero__menu">Menu</span>
+            <span class="hero__svg"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- section hero end-->
+
+    <!-- section favorites coffee start-->
+
+    <div class="section container favorites" id="favorites">
+      <h2 class="title favorites__title">Choose your <span class="text-accent">favorite </span>coffee</h2>
+
+      <div class="carousel">
+        <div class="carousel__wrap">
+          <div class="carousel__button-wrap carousel__button--prev">
+            <button class="carousel__button"></button>
+            <span class="carousel__arrow carousel__arrow--left"></span>
+          </div>
+          <div class="carousel__container">
+            <ul class="carousel__list">
+              <li class="carousel__slide">
+                <img src="assets/img/coffee-slider/coffee-slider-1.png" alt="S’mores Frappuccino"
+                  class="carousel__image">
+                <h3 class="carousel__title small-title">S’mores Frappuccino</h3>
+                <p class="carousel__descr">This new drink takes an espresso and mixes it with brown sugar and cinnamon
+                  before being topped with oat milk.</p>
+                <p class="carousel__price small-title">$5.50</p>
+              </li>
+              <!-- <li class="carousel__slide">
+              <img src="assets/img/coffee-slider/coffee-slider-2.png" alt="Caramel Macchiato" class="carousel__image">
+              <h3 class="carousel__title small-title">Caramel Macchiato</h3>
+              <p class="carousel__descr">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream
+                under whipped thick foam.</p>
+              <p class="carousel__price small-title">$5.00</p>
+            </li>
+            <li class="carousel__slide">
+              <img src="assets/img/coffee-slider/coffee-slider-3.png" alt="Ice coffee" class="carousel__image">
+              <h3 class="carousel__title small-title">Ice coffee</h3>
+              <p class="carousel__descr">A popular summer drink that tones and invigorates. Prepared from coffee, milk
+                and ice.</p>
+              <p class="carousel__price small-title">$4.50</p>
+            </li> -->
+            </ul>
+          </div>
+          <div class="carousel__button-wrap carousel__button--next">
+            <button class="carousel__button"></button>
+            <span class="carousel__arrow carousel__arrow--right"></span>
+          </div>
+
+        </div>
+
+        <ul class="carousel__control">
+          <li class="carousel__pagination carousel__pagination--active"></li>
+          <li class="carousel__pagination"></li>
+          <li class="carousel__pagination"></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- section favorites coffee end-->
+
+    <!-- section about start -->
+    <div class="section container about" id="about">
+      <h2 class="title about__title">Resource is <span class="text-accent">the perfect and cozy place </span>where you
+        can
+        enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
+      <ul class="about__list">
+        <li class="about__item">
+          <div class="about__image about__image--one"></div>
+        </li>
+        <li class="about__item">
+          <div class="about__image about__image--two"></div>
+        </li>
+        <li class="about__item">
+          <div class="about__image about__image--three"></div>
+        </li>
+        <li class="about__item">
+          <div class="about__image about__image--four"></div>
+        </li>
+      </ul>
+    </div>
+
+    <!-- section about end -->
+
+    <!-- section Mobile App start -->
+
+    <div class="section container mobile" id="mobile">
+      <div class="mobile__wrap">
+        <h2 class="title mobile__title"><span class="text-accent">Download </span>our apps to&nbsp;start ordering</h2>
+        <p class="mobile__text">Download the Resource app today and experience the comfort of ordering your favorite
+          coffee from wherever you are</p>
+        <div class="app-link">
+          <a href="#" class="app-link__button">
+            <span class="app-link__img app-link__img--appstore"></span>
+            <div class="app-link__text">
+              <span class="app-link__available">Available on the</span>
+              <span class="app-link__store">App Store</span>
+            </div>
+          </a>
+          <a href="#" class="app-link__button">
+            <span class="app-link__img app-link__img--googleplay"></span>
+            <div class="app-link__text">
+              <span class="app-link__available">Available on the</span>
+              <span class="app-link__store">Google Play</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <div class="mobile__image">
+        <img src="assets/img/mobile-screens.png" alt="Mobile screens photo">
+      </div>
+    </div>
+
+    <!-- section Mobile App end -->
+
+  </main>
+
+  <!-- footer start -->
+
+  <footer class="footer container" id="contact">
+    <div class="footer__wrap">
+      <div class="footer__left">
+        <h2 class="title footer__title">Sip, Savor, Smile. <span class="text-accent">It’s coffee time!</span></h2>
+        <ul class="social">
+          <li class="social__item">
+            <a class="social__link" href="https://twitter.com/" target="_blank">
+              <span class="social__img social__img--twitter"></span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.instagram.com/" target="_blank">
+              <span class="social__img social__img--instagram"></span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link" href="https://www.facebook.com/" target="_blank">
+              <span class="social__img social__img--facebook"></span>
+            </a>
+
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer__right">
+        <h3 class="small-title footer__subtitle">Contact us</h3>
+        <address class="address">
+          <ul class="address__list">
+            <li class="address__item">
+              <a class="address__text address__text--place address__hover"
+                href="https://www.google.com/maps/place/Green+Rd,+Louisiana+70460,+%D0%A1%D0%A8%D0%90/@30.3210167,-89.8612197,17z/data=!4m15!1m8!3m7!1s0x889dfac78f036f87:0x685215a58edb2bb1!2zR3JlZW4gUmQsIExvdWlzaWFuYSA3MDQ2MCwg0KHQqNCQ!3b1!8m2!3d30.3210167!4d-89.8586394!16s%2Fg%2F11jmvl0zmm!3m5!1s0x889dfac78f036f87:0x685215a58edb2bb1!8m2!3d30.3210167!4d-89.8586394!16s%2Fg%2F11jmvl0zmm?entry=ttu"
+                target="_blank">8558 Green Rd., LA</a>
+            </li>
+            <li class="address__item">
+              <a class="address__text address__text--phone address__hover" href="tel:+16035550123">+1 (603) 555-0123</a>
+            </li>
+            <li class="address__item">
+              <span class="address__text address__text--clock">Mon-Sat: 9:00 AM – 23:00 PM</span>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+  </footer>
+
+  <!-- footer end -->
 
 </body>
 

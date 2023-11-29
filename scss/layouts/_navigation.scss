@@ -1,0 +1,29 @@
+.nav__list {
+  @extend %flex;
+  gap: 33px;
+}
+
+.nav__item {
+  padding: 5px;
+}
+
+.nav__link {
+  position: relative;
+  font-weight: 600;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 2px;
+    width: 100%;
+    background-color: $color-dark;
+    transform: scaleX(0);
+    @extend %transition;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}

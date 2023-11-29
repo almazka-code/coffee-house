@@ -1,0 +1,53 @@
+.address__item:not(:last-child) {
+  margin-bottom: 18px;
+}
+
+.address__text {
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translateY(3px);
+  }
+
+  &--place::before {
+    background-image: url("../assets/svg/place.svg");
+  }
+
+  &--phone::before {
+    background-image: url("../assets/svg/phone.svg");
+  }
+
+  &--clock::before {
+    background-image: url("../assets/svg/clock.svg");
+  }
+}
+
+.address__hover {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    height: 2px;
+    width: 100%;
+    background-color: $color-light;
+    transform: scaleX(0);
+    @extend %transition;
+  }
+
+  &:hover::after {
+    transform: scaleX(1);
+  }
+}

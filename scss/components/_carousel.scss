@@ -1,0 +1,91 @@
+.carousel__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.carousel__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 480px;
+}
+
+.carousel__image {
+  max-height: 480px;
+  margin-bottom: 20px;
+}
+
+.carousel__title {
+  margin-bottom: 16px;
+  text-align: center;
+  letter-spacing: 0.45px;
+}
+
+.carousel__descr {
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.carousel__price {
+  margin-bottom: 40px;
+}
+
+.carousel__button-wrap {
+  position: relative;
+  align-self: center;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.carousel__button {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+  @include border ($color: $color-border-dark, $radius: 50%);
+  @extend %transition;
+}
+
+.carousel__arrow {
+  content: "";
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @extend %transition;
+}
+
+.carousel__arrow--right {
+  @include background-image (url("../assets/svg/arrow-right.svg"));
+}
+
+.carousel__arrow--left {
+  @include background-image (url("../assets/svg/arrow-left.svg"));
+}
+
+.carousel__button-wrap:hover .carousel__arrow {
+  filter: invert(93%) sepia(13%) saturate(239%) hue-rotate(341deg) brightness(92%) contrast(91%);
+}
+
+.carousel__button-wrap:hover .carousel__button {
+  background-color: $color-border-dark;
+}
+
+.carousel__control {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+
+.carousel__pagination {
+  width: 40px;
+  height: 4px;
+  border-radius: 100px;
+  background-color: $color-border-light;
+
+  &--active {
+    background-color: $color-border-dark;
+  }
+}

@@ -1,0 +1,70 @@
+.header__container {
+  @extend %flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.header__logo {
+  width: 100px;
+  height: 60px;
+}
+
+.header__menu {
+  position: relative;
+  font-weight: 600;
+  padding: 5px;
+  padding-right: 28px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    @include background-image (url("../assets/svg/coffee-cup.svg"));
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $color-dark;
+    transform: scaleX(0);
+    @extend %transition;
+  }
+
+  &:hover::before {
+    transform: scaleX(1);
+  }
+}
+
+.header__text {
+  position: relative;
+  font-weight: 600;
+  padding-bottom: 5px;
+  padding-right: 28px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    @include background-image (url("../assets/svg/coffee-cup.svg"));
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background-color: $color-dark;
+
+  }
+
+}
