@@ -9,6 +9,10 @@
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
+
+  @include media-small-mobile {
+    grid-gap: 40px;
+  }
 }
 
 .mobile__image {

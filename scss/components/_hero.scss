@@ -6,6 +6,10 @@
   @include media-tablet {
     padding: 100px 60px;
   }
+
+  @include media-big-mobile {
+    padding: 60px 16px;
+  }
 }
 
 .hero__wrap {

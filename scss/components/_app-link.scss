@@ -1,6 +1,11 @@
 .app-link {
   display: flex;
   gap: 20px;
+
+  @include media-small-mobile {
+    display: inline-flex;
+    flex-direction: column;
+  }
 }
 
 .app-link__button {

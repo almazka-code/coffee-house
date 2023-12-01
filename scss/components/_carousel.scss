@@ -1,6 +1,10 @@
 .carousel__wrap {
   display: flex;
   justify-content: space-between;
+
+  @include media-big-mobile {
+    justify-content: center;
+  }
 }
 
 .carousel__slide {
@@ -9,6 +13,10 @@
   align-items: center;
   justify-content: space-between;
   max-width: 480px;
+
+  @include media-big-mobile {
+    justify-content: center;
+  }
 }
 
 .carousel__image {
@@ -36,6 +44,10 @@
   align-self: center;
   margin-bottom: 35px;
   cursor: pointer;
+
+  @include media-big-mobile {
+    display: none;
+  }
 }
 
 .carousel__button {

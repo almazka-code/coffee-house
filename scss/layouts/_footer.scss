@@ -12,13 +12,25 @@
     display: block;
     padding: 100px 60px;
   }
+
+  @include media-big-mobile {
+    padding: 60px 16px 65px 16px;
+  }
 }
 
 .footer__left {
   flex-basis: 50%;
 
   @include media-tablet {
-    margin-bottom: 98px;
+    margin-bottom: 95px;
+  }
+
+  @include media-big-mobile {
+    margin-bottom: 40px;
+  }
+
+  @include media-big-mobile {
+    margin-bottom: 35px;
   }
 }
 
@@ -26,6 +38,10 @@
   margin-bottom: 40px;
   letter-spacing: 0.5px;
   color: $color-light;
+
+  @include media-big-mobile {
+    letter-spacing: 0;
+  }
 }
 
 .footer__right {

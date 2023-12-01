@@ -18,6 +18,10 @@
 .menu__list {
   display: flex;
   gap: 16px;
+
+  @include media-big-mobile {
+    gap: 8px;
+  }
 }
 
 .menu__btn {
@@ -94,12 +98,11 @@
 
 .menu__group {
   display: flex;
-  // justify-content: center;
   flex-wrap: wrap;
   gap: 40px;
 
-  // @include media-tablet {
-  //   justify-content: center;
-  // }
+  @media (max-width: 768px) {
+    justify-content: center;
+  }
 }
 

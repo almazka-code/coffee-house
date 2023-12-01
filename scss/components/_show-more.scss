@@ -6,7 +6,7 @@
   margin-top: 40px;
   @include border ($color: $color-border-dark, $radius: 50%);
 
-  @include media-big-mobile {
+  @media (max-width: 768px) {
     display: block;
   }
 
@@ -21,7 +21,7 @@
     height: 24px;
     @include background-image (url("../assets/svg/refresh.svg"));
 
-    @include media-big-mobile {
+    @media (max-width: 768px) {
       display: inline-block;
     }
   }

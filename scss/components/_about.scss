@@ -69,6 +69,11 @@
     transform: scale(1.05);
     pointer-events: none;
   }
+
+  @include media-small-mobile {
+    transform: scale(1.23);
+  }
+
 }
 
 .about__image--one {

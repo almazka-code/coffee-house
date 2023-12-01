@@ -11,11 +11,15 @@
     width: calc((100% - 40px * 2) / 3);
   }
 
-  // @include media-tablet {
-  //   width: calc((100% - 40px) / 2);
-  // }
+  @media (max-width: 800px) {
+    width: calc((100% - 40px) / 2);
+  }
 
-  @media (max-width: 768px) {
+  @media (width: 768px) {
+    width: 310px;
+  }
+
+  @include media-small-mobile {
     width: 310px;
   }
 }
@@ -25,8 +29,6 @@
     display: none;
   }
 }
-
-
 
 .card__article {
   // width: 310px;
