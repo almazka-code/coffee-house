@@ -98,8 +98,8 @@
   flex-wrap: wrap;
   gap: 40px;
 
-  @include media-tablet {
-    justify-content: center;
-  }
+  // @include media-tablet {
+  //   justify-content: center;
+  // }
 }
 
