@@ -16,16 +16,18 @@
   @include border($color: $color-border-dark, $radius: 100px);
   @extend %transition;
 
-  &:hover {
-    background-color: $color-border-dark;
-  }
+  @media (hover: hover) {
+    &:hover {
+      background-color: $color-border-dark;
+    }
 
-  &:hover .app-link__text {
-    color: $color-light;
-  }
+    &:hover .app-link__text {
+      color: $color-light;
+    }
 
-  &:hover .app-link__img {
-    filter: invert(92%) sepia(18%) saturate(227%) hue-rotate(333deg) brightness(93%) contrast(90%);
+    &:hover .app-link__img {
+      filter: invert(92%) sepia(18%) saturate(227%) hue-rotate(333deg) brightness(93%) contrast(90%);
+    }
   }
 }
 

@@ -1,27 +1,35 @@
 .card {
   cursor: pointer;
-  width: calc((100% - 40px * 3) / 4);
+  // width: calc((100% - 40px * 3) / 4);
   min-height: 505px;
+  width: 310px;
 
-  &:hover .card__image {
-    transform: scale(1);
+  // &:hover .card__image {
+  //   transform: scale(1);
+  // }
+
+  @media (hover: hover) {
+    &:hover .card__image {
+      transform: scale(1);
+    }
   }
 
-  @media (max-width: 1200px) {
-    width: calc((100% - 40px * 2) / 3);
-  }
+  // @media (max-width: 1200px) {
+  //   width: calc((100% - 40px * 2) / 3);
+  // }
 
-  @media (max-width: 800px) {
-    width: calc((100% - 40px) / 2);
-  }
+  // @media (max-width: 800px) {
+  //   width: calc((100% - 40px) / 2);
+  // }
 
-  @media (width: 768px) {
-    width: 310px;
-  }
+  // @media (width: 768px)  {
+  //   width: 310px;
+  // }
 
-  @include media-small-mobile {
-    width: 310px;
-  }
+  // @include media-small-mobile {
+  //   width: 310px;
+  // }
+
 }
 
 .card:nth-child(n+5) {
@@ -35,12 +43,12 @@
   @include border ($color: $color-border-light, $radius: 40px);
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 506px;
 }
 
 .card__top {
-  width: 100%;
-  min-height: 310px;
+  width: 310px;
+  height: 310px;
   overflow: hidden;
   border-radius: 40px;
 }
@@ -58,7 +66,8 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100%;
+  // height: 100%;
+  height: 196px;
   padding: 20px;
 }
 

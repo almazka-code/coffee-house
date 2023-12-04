@@ -47,7 +47,13 @@
     @extend %transition;
   }
 
-  &:hover::after {
-    transform: scaleX(1);
+  // &:hover::after {
+  //   transform: scaleX(1);
+  // }
+
+  @media (hover: hover) {
+    &:hover::after  {
+      transform: scaleX(1);
+    }
   }
 }

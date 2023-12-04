@@ -35,10 +35,20 @@
   }
 }
 
-.social__link:hover .social__img {
-  filter: invert(93%) sepia(13%) saturate(239%) hue-rotate(341deg) brightness(92%) contrast(91%);
-}
+// .social__link:hover .social__img {
+//   filter: invert(93%) sepia(13%) saturate(239%) hue-rotate(341deg) brightness(92%) contrast(91%);
+// }
 
-.social__link:hover {
-  background-color: $color-light;
+// .social__link:hover {
+//   background-color: $color-light;
+// }
+
+@media (hover: hover) {
+  .social__link:hover .social__img {
+    filter: invert(93%) sepia(13%) saturate(239%) hue-rotate(341deg) brightness(92%) contrast(91%);
+  }
+
+  .social__link:hover {
+    background-color: $color-light;
+  }
 }

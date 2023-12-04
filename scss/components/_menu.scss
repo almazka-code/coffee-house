@@ -81,28 +81,26 @@
     background-color: $color-light;
    }
 
-   &:hover {
-    background-color: $color-border-dark;
-    color: $color-light;
-   }
+   @media (hover: hover) {
+    &:hover {
+      background-color: $color-border-dark;
+      color: $color-light;
+     }
 
-   &:hover::before {
-    background-color: $color-light;
+     &:hover::before {
+      background-color: $color-light;
+     }
    }
 }
 
 .menu__content {
-  display: flex;
-  justify-content: center;
+  width: 100%;
 }
 
 .menu__group {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 40px;
-
-  @media (max-width: 768px) {
-    justify-content: center;
-  }
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 310px);
+  grid-gap: 40px;
+  justify-content: center;
 }
 

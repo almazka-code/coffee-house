@@ -16,8 +16,9 @@
   padding: 0;
   padding-right: 28px;
 
-  @include media-tablet {
-    padding-right: 56px;
+  @media (max-width: 768px) {
+    // padding-right: 56px;
+    display: none;
   }
 
   &::before {
@@ -28,7 +29,7 @@
     height: 20px;
     @include background-image (url("../assets/svg/coffee-cup.svg"));
 
-    @include media-tablet {
+    @media (max-width: 768px) {
       background-image: url("../assets/svg/coffee-cup-tablet.svg");
       width: 40px;
       height: 40px;
@@ -75,40 +76,9 @@
     height: 2px;
     width: 100%;
     background-color: $color-dark;
-
   }
-}
 
-.header__nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-basis: 66%;
-
-  @include media-tablet {
-    opacity: 0;
-    position: fixed;
-    right: 0;
-    top: 80px;
-    width: 100%;
-    height: 100vh;
-    z-index: 10;
-    flex-direction: column;
-    justify-content: flex-start;
-    gap: 95px;
-    flex-basis: 100%;
-    padding: 62px 40px;
-    background-color: $color-light;
-    visibility: hidden;
-    transform: translateX(100%);
-    transition: all 0.4s ease;
-    font-size: 32px;
-    line-height: 125%;
+  @media (max-width: 768px) {
+    display: none;
   }
-}
-
-.header__nav--active {
-  transform: translateX(0);
-  opacity: 1;
-  visibility: visible;
 }

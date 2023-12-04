@@ -1,33 +1,41 @@
-// .nav {
-//   @include media-tablet {
-//     opacity: 0;
-//     position: fixed;
-//     right: 0;
-//     top: 80px;
-//     // width: 43%;
-//     // min-width: 332px;
-//     width: 100%;
-//     height: 924px;
-//     z-index: 10;
-//     padding: 62px 40px;
-//     background-color: $color-light;
-//     visibility: hidden;
-//     transform: translateX(100%);
-//     transition: all 0.4s ease;
-//   }
-// }
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-// .nav--active {
-//   transform: translateX(0);
-//   opacity: 1;
-//   visibility: visible;
-// }
+  @media (max-width: 768px) {
+    opacity: 0;
+    position: fixed;
+    right: 0;
+    top: 80px;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 95px;
+    flex-basis: 100%;
+    padding: 62px 40px;
+    background-color: $color-light;
+    visibility: hidden;
+    transform: translateX(100%);
+    transition: all 0.4s ease;
+    font-size: 32px;
+    line-height: 125%;
+  }
+}
+
+.nav--active {
+  transform: translateX(0);
+  opacity: 1;
+  visibility: visible;
+}
 
 .nav__list {
   @extend %flex;
   gap: 33px;
 
-  @include media-tablet {
+  @media (max-width: 768px) {
     flex-direction: column;
     gap: 60px;
   }
@@ -57,7 +65,13 @@
     @extend %transition;
   }
 
-  &:hover::after {
-    transform: scaleX(1);
+  // &:hover::after {
+  //   transform: scaleX(1);
+  // }
+
+  @media (hover: hover) {
+    &:hover::after  {
+      transform: scaleX(1);
+    }
   }
 }
