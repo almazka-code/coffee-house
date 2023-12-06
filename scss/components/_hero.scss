@@ -36,14 +36,6 @@
   font-weight: 600;
   background: $color-light;
 
-  // &:hover .hero__menu {
-  //   transform: translateX(-8px);
-  // }
-
-  // &:hover .hero__svg {
-  //   opacity: 1;
-  // }
-
   @media (hover: hover) {
     &:hover .hero__menu {
       transform: translateX(-8px);
@@ -77,5 +69,3 @@
     transform: translateX(-3px);
   }
 }
-
-

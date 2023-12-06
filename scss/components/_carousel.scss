@@ -81,14 +81,6 @@
   @include background-image (url("../assets/svg/arrow-left.svg"));
 }
 
-// .carousel__button-wrap:hover .carousel__arrow {
-//   filter: invert(93%) sepia(13%) saturate(239%) hue-rotate(341deg) brightness(92%) contrast(91%);
-// }
-
-// .carousel__button-wrap:hover .carousel__button {
-//   background-color: $color-border-dark;
-// }
-
 @media (hover: hover) {
   .carousel__button-wrap:hover .carousel__arrow {
     filter: invert(93%) sepia(13%) saturate(239%) hue-rotate(341deg) brightness(92%) contrast(91%);
