@@ -19,6 +19,7 @@
   width: 16px;
   height: 2px;
   background-color: $color-dark;
+  @extend %transition;
 
   &--first {
     transform: translateY(4px) translateX(-50%);
@@ -43,3 +44,6 @@
   @extend %transition;
 }
 
+.stop-scroll {
+  overflow: hidden;
+}
