@@ -713,25 +713,44 @@ ul {
 }
 
 .hero {
-  padding: 100px;
+  position: relative;
+  height: 644px;
+  overflow: hidden;
   border-radius: 40px;
-  background-image: url("../assets/img/enjoy-bg.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
-@media (max-width: 1024px) {
+@media (max-width: 576px) {
   .hero {
-    padding: 100px 60px;
-  }
-}
-@media (max-width: 767px) {
-  .hero {
-    padding: 60px 16px;
+    height: 552px;
   }
 }
 
 .hero__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 100px;
+}
+@media (max-width: 1024px) {
+  .hero__content {
+    padding: 100px 60px;
+  }
+}
+@media (max-width: 576px) {
+  .hero__content {
+    padding: 60px 16px;
+  }
+}
+
+.hero__container {
   max-width: 530px;
 }
 

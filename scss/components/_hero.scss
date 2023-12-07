@@ -1,18 +1,40 @@
 .hero {
-  padding: 100px;
+  position: relative;
+  height: 644px;
+  overflow: hidden;
   border-radius: 40px;
-  @include background-image (url("../assets/img/enjoy-bg.jpg"));
+  // @include background-image (url("../assets/img/enjoy-bg.jpg"));
+
+  @include media-small-mobile {
+    height: 552px;
+  }
+}
+
+.hero__wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 100px;
 
   @include media-tablet {
     padding: 100px 60px;
   }
 
-  @include media-big-mobile {
+  @include media-small-mobile {
     padding: 60px 16px;
   }
 }
 
-.hero__wrap {
+.hero__container {
   max-width: 530px;
 }
 
