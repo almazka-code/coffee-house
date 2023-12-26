@@ -52,15 +52,16 @@
       </h2>
       <div class="menu__toggle">
         <ul class="menu__list">
-          <li class="menu__item"><button class="menu__btn menu__btn--active menu__btn--coffee">Coffee</button></li>
-          <li class="menu__item"><button class="menu__btn menu__btn--tea">Tea</button></li>
-          <li class="menu__item"><button class="menu__btn menu__btn--dessert">Dessert</button></li>
+          <li class="menu__item"><button class="menu__btn menu__btn--active menu__btn--coffee"
+              data-tab="#coffee">Coffee</button></li>
+          <li class="menu__item"><button class="menu__btn menu__btn--tea" data-tab="#tea">Tea</button></li>
+          <li class="menu__item"><button class="menu__btn menu__btn--dessert" data-tab="#dessert">Dessert</button></li>
         </ul>
       </div>
       <div class="menu__content">
 
         <!-- coffee group start-->
-        <ul class="menu__group menu__group--active">
+        <ul class="menu__group menu__group--active" id="coffee">
           <li class="card">
             <article class="card__article">
               <div class="card__top">
@@ -202,7 +203,7 @@
 
         <!-- tea group start-->
 
-        <ul class="menu__group menu__group--active">
+        <ul class="menu__group menu__group--active" id="tea">
           <li class="card">
             <article class="card__article">
               <div class="card__top">
@@ -274,7 +275,7 @@
         <!-- tea group end-->
 
         <!-- dessert group start -->
-        <ul class="menu__group menu__group--active">
+        <ul class="menu__group menu__group--active" id="dessert">
           <li class="card">
             <article class="card__article">
               <div class="card__top">
@@ -471,7 +472,7 @@
 
   <!-- footer end -->
 
-  <script type="module" src="js/main.js"></script>
+  <script type="module" src="js/menu.js"></script>
 
 </body>
 

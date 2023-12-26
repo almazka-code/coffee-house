@@ -1361,10 +1361,13 @@ ul {
 }
 
 .menu__group {
-  display: grid;
+  display: none;
   grid-template-columns: repeat(auto-fill, 310px);
   grid-gap: 40px;
   justify-content: center;
+}
+.menu__group--active {
+  display: grid;
 }
 
 .card {
