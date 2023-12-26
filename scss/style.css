@@ -887,7 +887,7 @@ ul {
   margin-bottom: 35px;
   cursor: pointer;
 }
-@media (max-width: 576px) {
+@media (max-width: 767px) {
   .carousel__button-wrap {
     display: none;
   }

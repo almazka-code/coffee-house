@@ -75,4 +75,46 @@ carousel.addEventListener('mouseleave', restartInterval);
 // Запуск интервала при загрузке страницы
 restartInterval();
 
-// touch slider
+// touch event
+carouselList.addEventListener('touchstart', function (e) {
+  handelTouchStart(e);
+  pauseInterval();
+}, false);
+
+carouselList.addEventListener('touchmove', handelTouchMove, false);
+
+carouselList.addEventListener('touchend', function () {
+  slideMove();
+  restartInterval();
+}, false);
+
+let x1;
+let x2;
+let xDiff;
+
+function handelTouchStart(e) {
+  e.preventDefault();
+  const firstTouch = e.touches[0];
+  x1 = firstTouch.clientX;
+}
+
+function handelTouchMove(e) {
+  if (!x1) {
+    return false;
+  }
+  x2 = e.touches[0].clientX;
+  xDiff = x2 - x1;
+}
+
+function slideMove() {
+  if (xDiff < 0) {
+    nextSlide();
+  }
+  if (xDiff > 0) {
+    prevSlide();
+  }
+
+  x1 = null;
+  x2 = null;
+  xDiff = null;
+}

@@ -67,7 +67,7 @@
   margin-bottom: 35px;
   cursor: pointer;
 
-  @include media-small-mobile {
+  @include media-big-mobile {
     display: none;
   }
 
