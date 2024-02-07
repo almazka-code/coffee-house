@@ -6,10 +6,6 @@
   margin-top: 40px;
   @include border ($color: $color-border-dark, $radius: 50%);
 
-  @media (max-width: 768px) {
-    display: block;
-  }
-
   @media (hover: hover) {
     &:hover {
       background-color: $color-border-dark;
@@ -19,6 +15,10 @@
       filter: invert(92%) sepia(18%) saturate(227%) hue-rotate(333deg) brightness(93%) contrast(90%);
     }
   }
+}
+
+.visible {
+  display: block;
 }
 
 .show-more__img {

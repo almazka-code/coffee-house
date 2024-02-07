@@ -107,3 +107,7 @@
     display: grid;
   }
 }
+
+.menu__group.mobile-version .card:nth-child(n+5) {
+  display: none;
+}

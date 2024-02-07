@@ -1370,6 +1370,10 @@ ul {
   display: grid;
 }
 
+.menu__group.mobile-version .card:nth-child(n+5) {
+  display: none;
+}
+
 .card {
   cursor: pointer;
   min-height: 505px;
@@ -1378,12 +1382,6 @@ ul {
 @media (hover: hover) {
   .card:hover .card__image {
     transform: scale(1);
-  }
-}
-
-@media (max-width: 768px) {
-  .card:nth-child(n+5) {
-    display: none;
   }
 }
 
@@ -1484,11 +1482,6 @@ ul {
   border: 1px solid #665F55;
   border-radius: 50%;
 }
-@media (max-width: 768px) {
-  .show-more {
-    display: block;
-  }
-}
 @media (hover: hover) {
   .show-more:hover {
     background-color: #665F55;
@@ -1496,6 +1489,10 @@ ul {
   .show-more:hover .show-more__img {
     filter: invert(92%) sepia(18%) saturate(227%) hue-rotate(333deg) brightness(93%) contrast(90%);
   }
+}
+
+.visible {
+  display: block;
 }
 
 .show-more__img {

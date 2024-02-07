@@ -10,12 +10,6 @@
   }
 }
 
-.card:nth-child(n+5) {
-  @media (max-width: 768px) {
-    display: none;
-  }
-}
-
 .card__article {
   @include border ($color: $color-border-light, $radius: 40px);
   display: flex;
