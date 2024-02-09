@@ -47,7 +47,6 @@ function updatePagination(index) {
   });
 }
 
-
 //Автоматическое перелистывание слайдов
 // setInterval(() => {
 //   nextSlide()
