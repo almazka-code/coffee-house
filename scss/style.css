@@ -986,7 +986,7 @@ ul {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 430px 120px 430px;
-  grid-gap: 40px;
+  gap: 40px;
 }
 @media (max-width: 768px) {
   .about__list {
@@ -1082,7 +1082,7 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  grid-gap: 100px;
+  gap: 100px;
 }
 @media (max-width: 1024px) {
   .mobile {
@@ -1092,7 +1092,7 @@ ul {
 }
 @media (max-width: 576px) {
   .mobile {
-    grid-gap: 40px;
+    gap: 40px;
   }
 }
 
@@ -1363,7 +1363,7 @@ ul {
 .menu__group {
   display: none;
   grid-template-columns: repeat(auto-fill, 310px);
-  grid-gap: 40px;
+  gap: 40px;
   justify-content: center;
 }
 .menu__group--active {

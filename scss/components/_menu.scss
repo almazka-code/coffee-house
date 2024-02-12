@@ -100,7 +100,7 @@
 .menu__group {
   display: none;
   grid-template-columns: repeat(auto-fill, 310px);
-  grid-gap: 40px;
+  gap: 40px;
   justify-content: center;
 
   &--active {
