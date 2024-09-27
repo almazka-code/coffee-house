@@ -8,6 +8,8 @@
   <link rel="shortcut icon" href="assets/svg/favicon.ico" type="image/x-icon">
 
   <link rel="stylesheet" href="scss/style.css">
+
+  <script type="module" src="js/index.js" defer></script>
 </head>
 
 <body class="body">
@@ -19,21 +21,22 @@
       <a href="#">
         <img class="header__logo" src="assets/svg/logo.svg" alt="Logo">
       </a>
-      <nav class="nav header__nav">
-        <ul class="nav__list">
-          <li class="nav__item"><a class="nav__link" href="#favorites">Favorite coffee</a></li>
-          <li class="nav__item"><a class="nav__link" href="#about">About</a></li>
-          <li class="nav__item"><a class="nav__link" href="#mobile">Mobile app</a></li>
-          <li class="nav__item"><a class="nav__link" href="#contact">Contact us</a></li>
-        </ul>
-      </nav>
-      <a href="menu.html" class="header__menu">Menu</a>
+      <div class="header__nav">
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a class="nav__link link" href="#favorites" id="link">Favorite coffee</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#about" id="link">About</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#mobile" id="link">Mobile app</a></li>
+            <li class="nav__item"><a class="nav__link link" href="#contact" id="link">Contact us</a></li>
+          </ul>
+        </nav>
+        <a href="menu.html" class="link header__menu" id="link">Menu</a>
+      </div>
 
-      <!-- <button class="burger">
-          <span class="burger__line burger__line_first"></span>
-          <span class="burger__line burger__line_second"></span>
-          <span class="burger__line burger__line_third"></span>
-        </button> -->
+      <button class="burger">
+        <span class="burger__line burger__line--first"></span>
+        <span class="burger__line burger__line--second"></span>
+      </button>
 
     </div>
   </header>
@@ -46,16 +49,24 @@
       <div class="hero">
         <h1 class="visually-hidden">Coffee House</h1>
         <div class="hero__wrap">
-          <h2 class="hero__title main-title"><span class="text-accent">Enjoy</span> premium coffee at our charming cafe
-          </h2>
-          <p class="hero__descr">With its inviting atmosphere and delicious coffee options, the Coffee House Resource is
-            a
-            popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
-            beverage.</p>
-          <a href="menu.html" class="hero__btn">
-            <span class="hero__menu">Menu</span>
-            <span class="hero__svg"></span>
-          </a>
+          <video class="hero__video" src="assets/video/video.mp4" autoplay muted loop></video>
+        </div>
+
+        <div class="hero__content">
+          <div class="hero__container">
+            <h2 class="hero__title main-title"><span class="text-accent">Enjoy</span> premium coffee at our charming
+              cafe
+            </h2>
+            <p class="hero__descr">With its inviting atmosphere and delicious coffee options, the Coffee House Resource
+              is
+              a
+              popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite
+              beverage.</p>
+            <a href="menu.html" class="hero__btn">
+              <span class="hero__menu">Menu</span>
+              <span class="hero__svg"></span>
+            </a>
+          </div>
         </div>
       </div>
     </div>
@@ -69,24 +80,24 @@
 
       <div class="carousel">
         <div class="carousel__wrap">
-          <div class="carousel__button-wrap carousel__button--prev">
-            <button class="carousel__button"></button>
-            <span class="carousel__arrow carousel__arrow--left"></span>
+          <div class="carousel__button-wrap carousel__button-wrap--prev">
+            <button class="carousel__button carousel__button--prev">
+              <span class="carousel__arrow carousel__arrow--left"></span>
+            </button>
           </div>
-          <div class="carousel__container">
-            <ul class="carousel__list">
-              <li class="carousel__slide">
-                <img src="assets/img/coffee-slider/coffee-slider-1.png" alt="S’mores Frappuccino"
-                  class="carousel__image">
-                <h3 class="carousel__title small-title">S’mores Frappuccino</h3>
-                <p class="carousel__descr">This new drink takes an espresso and mixes it with brown sugar and cinnamon
-                  before being topped with oat milk.</p>
-                <p class="carousel__price small-title">$5.50</p>
-              </li>
-              <!-- <li class="carousel__slide">
+          <ul class="carousel__list">
+            <li class="carousel__slide">
+              <img src="assets/img/coffee-slider/coffee-slider-1.png" alt="S’mores Frappuccino" class="carousel__image">
+              <h3 class="carousel__title small-title">S’mores Frappuccino</h3>
+              <p class="carousel__descr">This new drink takes an espresso and mixes it with brown sugar and cinnamon
+                before being topped with oat milk.</p>
+              <p class="carousel__price small-title">$5.50</p>
+            </li>
+            <li class="carousel__slide">
               <img src="assets/img/coffee-slider/coffee-slider-2.png" alt="Caramel Macchiato" class="carousel__image">
               <h3 class="carousel__title small-title">Caramel Macchiato</h3>
-              <p class="carousel__descr">Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream
+              <p class="carousel__descr">Fragrant and unique classic espresso with rich caramel-peanut syrup, with
+                cream
                 under whipped thick foam.</p>
               <p class="carousel__price small-title">$5.00</p>
             </li>
@@ -96,20 +107,26 @@
               <p class="carousel__descr">A popular summer drink that tones and invigorates. Prepared from coffee, milk
                 and ice.</p>
               <p class="carousel__price small-title">$4.50</p>
-            </li> -->
-            </ul>
-          </div>
-          <div class="carousel__button-wrap carousel__button--next">
-            <button class="carousel__button"></button>
-            <span class="carousel__arrow carousel__arrow--right"></span>
+            </li>
+          </ul>
+          <div class="carousel__button-wrap carousel__button-wrap--next">
+            <button class="carousel__button carousel__button--next">
+              <span class="carousel__arrow carousel__arrow--right"></span>
+            </button>
           </div>
 
         </div>
 
         <ul class="carousel__control">
-          <li class="carousel__pagination carousel__pagination--active"></li>
-          <li class="carousel__pagination"></li>
-          <li class="carousel__pagination"></li>
+          <li class="carousel__pagination">
+            <span class="carousel__progress carousel__progress--active"></span>
+          </li>
+          <li class="carousel__pagination">
+            <span class="carousel__progress"></span>
+          </li>
+          <li class="carousel__pagination">
+            <span class="carousel__progress"></span>
+          </li>
         </ul>
       </div>
     </div>
@@ -143,7 +160,7 @@
 
     <div class="section container mobile" id="mobile">
       <div class="mobile__wrap">
-        <h2 class="title mobile__title"><span class="text-accent">Download </span>our apps to&nbsp;start ordering</h2>
+        <h2 class="title mobile__title"><span class="text-accent">Download </span>our apps to start ordering</h2>
         <p class="mobile__text">Download the Resource app today and experience the comfort of ordering your favorite
           coffee from wherever you are</p>
         <div class="app-link">

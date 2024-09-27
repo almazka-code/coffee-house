@@ -3,12 +3,24 @@
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
   justify-content: center;
-  grid-gap: 100px;
+  gap: 100px;
+
+  @include media-tablet {
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+  }
+
+  @include media-small-mobile {
+    gap: 40px;
+  }
 }
 
 .mobile__image {
+  display: flex;
+  justify-content: center;
   width: 100%;
   height: auto;
+
 }
 
 .mobile__title {

@@ -64,10 +64,20 @@ ul {
 
 .main-title {
   @include font($weight: 600, $size: 72px, $height: 105%);
+
+  @include media-big-mobile {
+    font-size: 42px;
+    line-height: 115%;
+  }
 }
 
 .title {
   @include font($weight: 600, $size: 60px, $height: 125%);
+
+  @include media-big-mobile {
+    font-size: 32px;
+  }
+
 }
 
 .small-title {

@@ -1,13 +1,29 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+
 .nav__list {
   @extend %flex;
   gap: 33px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 60px;
+  }
 }
 
 .nav__item {
   padding: 5px;
+
+  @include media-tablet {
+    padding: 0;
+  }
 }
 
-.nav__link {
+.link {
   position: relative;
   font-weight: 600;
 
@@ -23,7 +39,14 @@
     @extend %transition;
   }
 
-  &:hover::after {
-    transform: scaleX(1);
+  @media (hover: hover) {
+    &:hover::after  {
+      transform: scaleX(1);
+    }
+  }
+
+  @media (max-width: 768px) {
+    font-size: 32px;
+    line-height: 125%;
   }
 }

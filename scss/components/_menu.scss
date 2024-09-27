@@ -18,6 +18,10 @@
 .menu__list {
   display: flex;
   gap: 16px;
+
+  @include media-big-mobile {
+    gap: 8px;
+  }
 }
 
 .menu__btn {
@@ -77,23 +81,33 @@
     background-color: $color-light;
    }
 
-   &:hover {
-    background-color: $color-border-dark;
-    color: $color-light;
-   }
+   @media (hover: hover) {
+    &:hover {
+      background-color: $color-border-dark;
+      color: $color-light;
+     }
 
-   &:hover::before {
-    background-color: $color-light;
+     &:hover::before {
+      background-color: $color-light;
+     }
    }
+}
+
+.menu__content {
+  width: 100%;
 }
 
 .menu__group {
-  // display: flex;
-  // justify-content: space-between;
-  // flex-wrap: wrap;
-  // gap: 40px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-gap: 40px;
+  display: none;
+  grid-template-columns: repeat(auto-fill, 310px);
+  gap: 40px;
+  justify-content: center;
+
+  &--active {
+    display: grid;
+  }
 }
 
+.menu__group.mobile-version .card:nth-child(n+5) {
+  display: none;
+}
