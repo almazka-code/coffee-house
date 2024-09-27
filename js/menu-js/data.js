@@ -5,7 +5,7 @@ export const data = [
     "description": "Fragrant black coffee with Jameson Irish whiskey and whipped milk",
     "price": "7.00",
     "category": "coffee",
-    "imageUrl": "../../assets/img/menu/coffee/coffee-1.jpg",
+    "imageUrl": "assets/img/menu/coffee/coffee-1.jpg",
     "sizes": {
       "s": {
         "size": "200 ml",
