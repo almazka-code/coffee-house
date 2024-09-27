@@ -42,7 +42,7 @@ export const data = [
     "description": "Classic coffee with milk and Kahlua liqueur under a cap of frothed milk",
     "price": "7.00",
     "category": "coffee",
-    "imageUrl": "../../assets/img/menu/coffee/coffee-2.jpg",
+    "imageUrl": "assets/img/menu/coffee/coffee-2.jpg",
     "sizes": {
       "s": {
         "size": "200 ml",
@@ -79,7 +79,7 @@ export const data = [
     "description": "Espresso with frothed milk, cream and aromatic honey",
     "price": "5.50",
     "category": "coffee",
-    "imageUrl": "../../assets/img/menu/coffee/coffee-3.jpg",
+    "imageUrl": "./../assets/img/menu/coffee/coffee-3.jpg",
     "sizes": {
       "s": {
         "size": "200 ml",
@@ -116,7 +116,7 @@ export const data = [
     "description": "Cappuccino with soft thick foam in summer version with ice",
     "price": "5.00",
     "category": "coffee",
-    "imageUrl": "../../assets/img/menu/coffee/coffee-4.jpg",
+    "imageUrl": "../../../assets/img/menu/coffee/coffee-4.jpg",
     "sizes": {
       "s": {
         "size": "200 ml",
